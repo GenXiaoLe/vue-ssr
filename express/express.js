@@ -7,6 +7,10 @@
 // 2. 调用createBundleRenderer方法返回创建实例
 // 3. renderToString 传入 vue实例 由于返回是个promise 直接调用then 接受数据 输出
 
+// 1.使用vue-server-renderer根据服务端和客户端的json配置包，生成一个bundle实例
+// 2.调用实例的renderToString，将配置好的上下文传入，和之前的客户端，服务端文件产生联系，拿到vue实例生成html
+// 3.将html发送到页面上
+
 // 引入favicon 使用server.use处理favicon地址
 const express = require('express');
 const path = require('path');

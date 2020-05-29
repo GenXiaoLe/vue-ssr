@@ -1,3 +1,9 @@
+// 服务端需要做的事
+// 1.返回一个promise，接收一个上下文，是sever文件传过来的
+// 2.在上下文context中取出url，实现首屏跳转
+// 3.在路由渲染完成的时候，取出所有的组件components，并Promise.all遍历所有的组件中是否有异步asyncData方法，传入参数执行之
+// 4.在then的时候将store挂载到上下文中，实现静态store序列化
+
 import { createApp } from './main';
 
 // 返回一个函数，接收请求上下文，返回创建的vue实例

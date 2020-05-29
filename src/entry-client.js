@@ -1,3 +1,7 @@
+// 客户端要做的事
+// 将服务端序列化的静态store从__INITIAL_STATE__上拿出来，范旭路恶化解析
+// 在路由渲染完成后将app挂载
+
 import { createApp } from './main';
 
 const { app, router, store } = createApp();
